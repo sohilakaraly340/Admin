@@ -1,0 +1,16 @@
+<form [formGroup]="myForm" (ngSubmit)="create()">
+  
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email">
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" formControlName="phone">
+  <span formGroupName="address">
+    <br/><label for="street">Street:</label><br/>
+      <input type="text" id="street" formControlName="street"><br/><br/>
+      <label for="city">City:</label><br/>
+      <input type="text" id="city" formControlName="city">
+  </span>
+  <button type="submit" [disabled]="!myForm.valid">Submit</button>
+</form>

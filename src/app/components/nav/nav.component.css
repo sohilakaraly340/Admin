@@ -1,0 +1,15 @@
+nav{
+    background-color: #607274;
+    display: flex;
+    justify-content: center;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #FAEED1;
+    padding: 20px;
+}
+.active-link {
+    background-color: #FAEED1;
+    color: #607274 !important;
+}
